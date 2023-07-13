@@ -16,24 +16,23 @@ main {
 }
 
 .menu li a {
+flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--button-color);
-    border: 1px solid var(--button-color);
-    padding: 1rem;
-    box-shadow: 5px 5px 5px black;
-    color: var(--button-text-color);
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 20px;
+    list-style-type: none;
+    border: 1px solid white;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
     text-transform: uppercase;
+    color: var(--button-text-color);
     font-family: 'Roboto', sans-serif;
     animation: pulse 1.5s infinite;
 }
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 var(--button-color);
+        box-shadow: 0 0 0 0 white;
     }
 
     5% {
